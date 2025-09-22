@@ -38,7 +38,9 @@ def tree_height(node):
 
 def tree_size(node):
     if node is None:
-        return 1 + tree_size(node.left)+tree_size(node.right)
+        return 0
+    
+    return 1 + tree_size(node.left)+tree_size(node.right)
 
 
 tree2 = parse_tuple(((1,3,None), 2, ((None, 3, 4), 5, (6, 7, 8))))
